@@ -1,6 +1,6 @@
-import Filters from "../../../../../components/Filters/Filters";
-import { Hotsales, Lables, Pagination } from "../../../../../components";
-import Recently_viewed from "../../../../../components/Recently_viewed/Recently_viewed";
+import Filters from "../../../../../../components/Filters/Filters";
+import { Hotsales, Lables, Pagination } from "../../../../../../components";
+import Recently_viewed from "../../../../../../components/Recently_viewed/Recently_viewed";
 
 const Menu = () => {
   return (

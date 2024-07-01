@@ -1,5 +1,5 @@
-import { ChoiseForCart } from "../../../components";
-import CheckForOrders from "../../../components/CheckForOrders/CheckForOrders";
+import { ChoiseForCart } from "../../../../components";
+import CheckForOrders from "../../../../components/CheckForOrders/CheckForOrders";
 
 const ShoppingCart = () => {
   return (

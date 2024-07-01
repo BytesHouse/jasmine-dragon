@@ -17,7 +17,7 @@ import { Footerbuttons1, Footerbuttons2 } from "../index";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
-  //   const { t } = useTranslation();
+  //   const { t } = useTranslation("Header");
   //   const { pathname } = useLocation();
   const pathname = usePathname();
   useEffect(() => {
