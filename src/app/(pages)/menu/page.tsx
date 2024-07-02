@@ -2,9 +2,9 @@ import {
   Footerbuttons1,
   Footerbuttons2,
   HeaderForMenu,
-} from "../../../../components";
-import Footerfinal from "../../../../components/Footerfinal/Footerfinal";
-import ImageSection from "../../../../components/ImageSection/Imagesection";
+} from "../../../components";
+import Footerfinal from "../../../components/Footerfinal/Footerfinal";
+import ImageSection from "../../../components/ImageSection/Imagesection";
 
 const Menu = () => {
   return (

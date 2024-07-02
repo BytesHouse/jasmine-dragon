@@ -2,7 +2,7 @@
 
 // import table from "../../../public/assets/Images/cupof2tea.png";
 import Image from "next/image";
-import Lines from "../../../../../../components/Lines/Lines";
+import Lines from "../../../../../components/Lines/Lines";
 
 const ContentSubHeader2 = () => {
   const handleClickChay = () => {
