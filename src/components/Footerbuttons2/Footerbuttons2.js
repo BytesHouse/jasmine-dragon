@@ -1,6 +1,6 @@
-import React from "react";
 import SwitchLanguge from "@/ui-kit/SwitchLanguge/SwitchLanguge";
-import { mock5 } from "../../config/constants";
+// import { mock5 } from "../../config/constants";
+import { locales } from "@/i18n";
 
 const Footerbuttons2 = () => {
   return (
@@ -23,7 +23,7 @@ const Footerbuttons2 = () => {
             09
           </span>
           <span className="viborka"> Язык</span>
-          <SwitchLanguge className="self-center" array={mock5} />
+          <SwitchLanguge className="self-center" array={locales} />
         </div>
       </div>
     </div>

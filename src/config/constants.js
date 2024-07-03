@@ -104,11 +104,11 @@ export const mock4 = [
   { id: 2, title: "48", icon: <Arrowup />, value: `48` },
 ];
 
-export const mock5 = [
-  { id: 1, title: "Ру", value: `Ру` },
-  { id: 2, title: "Ro", value: `Ro` },
-  { id: 3, title: "En", value: `En` },
-];
+// export const mock5 = [
+//   { id: 1, title: "Ру", value: `Ру` },
+//   { id: 2, title: "Ro", value: `Ro` },
+//   // { id: 3, title: "En", value: `En` },
+// ];
 
 export const privacyText = [
   { id: 0, title: "privacy_title_0", text: "privacy_text_00" },

@@ -2,15 +2,16 @@
 
 import { useState } from "react";
 import { Arrowdown, Arrowup } from "../icons";
+import Link from "next/link";
 
 const SwitchLanguage = ({ array }) => {
   const [isShow, setIsShow] = useState(false);
-  const [choice, setChoice] = useState(array[1].title);
+  const [choice, setChoice] = useState(array[0]);
 
   const handleChangeIsShow = () => setIsShow(!isShow);
 
   const handleChangeChoice = (item) => {
-    setChoice(item.title);
+    setChoice(item);
     handleChangeIsShow();
   };
 
@@ -28,13 +29,18 @@ const SwitchLanguage = ({ array }) => {
         </div>
         {isShow && (
           <ul className="absolute top-[100%] -left-[1px] w-[100px]">
-            {array.map((item) => (
+            {array.map((item, index) => (
               <li
-                className="hover:bg-blue cursor-pointer last:rounded-b-2xl py-[5px] px-[15px] border-x border-b"
+                className="hover:bg-blue cursor-pointer last:rounded-b-2xl  border-x border-b capitalize"
                 onClick={() => handleChangeChoice(item)}
-                key={item.id}
+                key={index}
               >
-                {item.title}
+                <Link
+                  className="w-full block py-[5px] px-[15px]"
+                  href={`/${item}`}
+                >
+                  {item}
+                </Link>
               </li>
             ))}
           </ul>
