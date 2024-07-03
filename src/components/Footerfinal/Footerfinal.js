@@ -1,7 +1,10 @@
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
+import useLocale from "@/hooks/useLocale";
 
 const Footerfinal = () => {
+  const lang = useLocale();
+  console.log();
   return (
     <div className="final">
       <p className="pfooter">
@@ -11,10 +14,10 @@ const Footerfinal = () => {
         </Link>
       </p>
       <div className="gap50">
-        <Link className="linkfooter" href="/privacy">
+        <Link className="linkfooter" href={`/${lang}/privacy`}>
           Политика приватности
         </Link>
-        <Link className="linkfooter" href="/terms">
+        <Link className="linkfooter" href={`/${lang}/terms`}>
           Условия использования
         </Link>
       </div>
