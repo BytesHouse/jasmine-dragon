@@ -14,6 +14,8 @@
   --white: #ffffff;
   --Nunito-sans: "Nunito Sans", serif;
   --Playfair-Display: "Playfair Display", serif;
+  --gutter: 25px;
+  --column: calc((1920 - 240 * 2 - 25 * 11) / 12);
 }
 /* Scrollbar styles */
 /* width */
@@ -239,13 +241,13 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin-top: 1700px;
+  /* margin-top: 1700px; */
   gap: 261px;
 }
 
 #onas {
-  width: 105px;
-  height: 49px;
+  /* width: 105px; */
+  /* height: 49px; */
   font-family: var(--Playfair-Display);
   font-style: italic;
   font-weight: 500;
@@ -255,9 +257,10 @@ header {
 }
 
 #jasminedragon {
-  text-indent: 120px;
-  width: 1050px;
-  height: 147px;
+  /* text-indent: 120px; */
+  text-indent: 125px;
+  /* width: 1050px; */
+  /* height: 147px; */
   font-family: var(--Playfair-Display);
   font-style: italic;
   font-weight: 500;
@@ -504,7 +507,7 @@ header {
   height: 590px;
   align-items: center;
   justify-content: space-between;
-  margin: 50px 0 50px 0;
+  /* margin: 50px 0 50px 0; */
   gap: 70px;
 }
 
@@ -541,8 +544,8 @@ header {
   line-height: 120%;
   color: var(--blue-light);
   background-color: transparent;
-  text-align: center;
-  display: flex;
+  /* text-align: center; */
+  width: 100%;
 }
 .p1sec2-1 {
   width: 545px;
@@ -556,19 +559,22 @@ header {
   background-color: transparent;
 }
 
-.subsec2-1 {
+.about-card {
+  padding: 50px;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 25px;
-  padding: 50px 50px 50px 50px;
-  width: 645px;
+  align-items: center;
+  text-align: left;
+  /* padding: 50px 50px 50px 50px; */
+  max-width: 645px;
   border: 1px rgba(39, 62, 64, 1) solid;
   height: 882px;
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-.subsec2-1:hover {
+.about-card:hover {
   background-color: rgba(47, 74, 76, 1);
   border: 1px var(--blue) solid;
 }
@@ -798,13 +804,13 @@ header {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 50px;
+  /* margin-top: 50px; */
 }
 
 .line {
   /*width: 227px;*/
   flex: 1;
-  height: 10px;
+  height: 15px;
   background: var(--blue-light);
   opacity: 0.2;
   border-radius: 100px;
@@ -911,86 +917,90 @@ header {
 }
 
 #img1 {
-  position: absolute;
-  width: 30%;
-  height: 462px;
-  left: 125px;
-  top: 0;
-  background: linear-gradient(
+  /* position: absolute; */
+  /* width: 30%; */
+  /* height: 462px; */
+  /* left: 125px; */
+  /* top: 0; */
+  /* background: linear-gradient(
       0deg,
       rgba(39, 62, 64, 0.1),
       rgba(39, 62, 64, 0.1)
     ),
-    #d9d9d9;
+    #d9d9d9; */
 }
 
 #img2 {
-  position: absolute;
-  width: 30%;
-  height: 299px;
-  right: 125px;
-  top: 331px;
-  background: linear-gradient(
+  /* position: absolute; */
+  /* width: 30%; */
+  /* height: 299px; */
+  /* right: 125px; */
+  /* top: 331px; */
+  /* background: linear-gradient(
       0deg,
       rgba(39, 62, 64, 0.1),
       rgba(39, 62, 64, 0.1)
     ),
-    #d9d9d9;
+    #d9d9d9; */
 }
 
 .section1 {
   grid-column: 1/-1;
+  /* min-height: 1553px; */
   position: relative;
-  margin-top: 150px;
+  padding-block: 100px !important;
 }
 
 #text1 {
-  position: absolute;
-  width: 1447px;
-  height: 327px;
+  /* position: absolute; */
+  /* width: 1447px; */
+  /* height: 327px; */
 
-  top: 630px;
+  /* top: 630px; */
   font-family: var(--Playfair-Display);
   font-style: italic;
   font-weight: 600;
-  font-size: 91px;
+  font-size: 95px;
   line-height: 120%;
   color: var(--blue);
 }
 
 #img3 {
-  position: absolute;
-  width: 219px;
-  height: 219px;
-  left: 858px;
-  top: 867px;
-  border: none;
-  outline: none;
+  /* position: absolute; */
+  /* width: 219px; */
+  /* height: 219px; */
+  /* left: 858px; */
+  /* top: 867px; */
+  /* border: none; */
+  /* outline: none; */
 }
 
 #img4 {
-  position: absolute;
-  width: 340px;
-  height: 246px;
-  left: 248px;
-  top: 1107px;
-  background: linear-gradient(
+  /* position: absolute; */
+  /* width: 340px; */
+  /* height: 246px; */
+  /* left: 248px; */
+  /* top: 1107px; */
+  /* background: linear-gradient(
       0deg,
       rgba(39, 62, 64, 0.1),
       rgba(39, 62, 64, 0.1)
     ),
-    #d9d9d9;
+    #d9d9d9; */
 }
 
 .container {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  gap: 50px;
+  gap: 50px var(--gutter);
   width: 100%;
   padding: 0 20px;
   margin: 0 auto;
   position: relative;
   background-color: rgba(39, 62, 64, 1);
+}
+main .container {
+  padding-block: 50px;
 }
 
 body {

@@ -24,8 +24,8 @@ const Header = () => {
     window.scrollTo(0, 0);
   }, [pathname]);
   return (
-    <header>
-      <div className="flex justify-between items-center py-4 border-b border-blue-light">
+    <header className="container">
+      <div className="flex justify-between items-center py-4 border-b border-blue-light grid-column">
         <Link href="/">
           <div className="flex items-center gap-6">
             <img src="/assets/Images/Logo.svg" alt="logo" />

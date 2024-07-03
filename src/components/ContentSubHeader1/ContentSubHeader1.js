@@ -10,8 +10,8 @@ const ContentSubHeader1 = () => {
     alert("Чай");
   };
   return (
-    <div className="grid-column">
-      <div className="navigation">
+    <div className="container">
+      <div className="navigation grid-column">
         <Image
           id="coffee-table"
           src="/assets/Images/cofee-table.png"
