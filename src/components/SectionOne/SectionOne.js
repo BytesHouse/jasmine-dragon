@@ -24,7 +24,7 @@ const SectionOne = () => {
         height={300}
         className="mt-[331px] col-start-8 col-end-12 w-full"
       />
-      <div className="grid-column container !p-0 relative">
+      <div className="col-span-full container !p-0 relative">
         <p id="text1" className="col-start-1 col-end-13">
           Наслаждайтесь чаем с пользой: вкус, качество, уют и особенная
           атмосфера
@@ -43,7 +43,7 @@ const SectionOne = () => {
           alt="2cup"
           width={340}
           height={246}
-          className="col-start-3 col-end-6 my-[100px] w-full"
+          className="col-start-3 col-end-6 mt-[100px] w-full"
         />
       </div>
     </section>

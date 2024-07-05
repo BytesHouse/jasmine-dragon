@@ -3,35 +3,41 @@ import Image from "next/image";
 
 const Contacts = () => {
   return (
-    <div className="contacts">
-      <h3 className="h3contacts">Контакты</h3>
-      <div className="maindivcontacts">
-        <Image
-          id="imgcontacts"
-          src="/assets/Images/teabig.png"
-          alt="tea"
-          width={560}
-          height={654}
-        />
-        <div className="sectioncontacts">
-          <div className="subseccontacts">
-            <h2 className="h2contacts">Адрес</h2>
-            <p className="pcontacts">Bd. Moscovei 12/2, Chisinau, Moldova</p>
-          </div>
-          <div className="subseccontacts">
-            <h2 className="h2contacts">E-mail</h2>
-            <a href="index.html" className="pcontacts">
-              hello@jasminedragontea.com
-            </a>
-            <a href="index.html" className="pcontacts">
-              ceo@jasminedragontea.com
-            </a>
-          </div>
-          <div className="subseccontacts">
-            <h2 className="h2contacts">Номера телефона</h2>
-            <p className="pcontacts">022-44-44-44</p>
-            <p className="pcontacts">069-555-555</p>
-          </div>
+    <div className="container">
+      <h5 className="col-span-full">Контакты</h5>
+
+      <Image
+        id="imgcontacts"
+        src="/assets/Images/teabig.png"
+        alt="tea"
+        width={560}
+        height={654}
+        className="col-span-5 "
+      />
+      <div className="sectioncontacts col-span-7">
+        <div className="subseccontacts">
+          <h3>Адрес</h3>
+          <h5 className="simple font-bold">
+            Bd. Moscovei 12/2, Chisinau, Moldova
+          </h5>
+        </div>
+        <div className="subseccontacts">
+          <h3>E-mail</h3>
+          <a href="mailto:hello@jasminedragontea.com" className="pcontacts">
+            hello@jasminedragontea.com
+          </a>
+          <a href="mailto:ceo@jasminedragontea.com" className="pcontacts">
+            ceo@jasminedragontea.com
+          </a>
+        </div>
+        <div className="subseccontacts">
+          <h3>Номера телефона</h3>
+          <a href="tel:022444444" className="pcontacts">
+            022-44-44-44
+          </a>
+          <a href="tel:069555555" className="pcontacts">
+            069-555-555
+          </a>
         </div>
       </div>
     </div>

@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Footerbuttons1 = () => {
   return (
-    <div className="knopkifooter">
+    <div className="flex flex-col gap-[25px] col-start-7 col-end-10">
       <button className="footerbutton">
         01 <span className="viborka">О нас</span>
       </button>

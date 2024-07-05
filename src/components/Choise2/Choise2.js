@@ -2,18 +2,20 @@ import React from "react";
 import { mock } from "../../config/constants";
 import { HeartIcon2, Wagon } from "../../ui-kit/icons";
 import Image from "next/image";
+import Pagination from "../Pagination/Pagination";
 
 const Choise2 = () => {
   return (
-    <div className="choise2">
+    // <div className="choise2">
+    <div className="container !gap-[25px] !pt-0">
       {mock.map((item) => (
-        <div key={Math.random()} className="choosen2">
+        <div key={Math.random()} className="choosen2 col-span-full">
           <Image
             className="svgchoise2"
             src={item.image}
             alt="teagreen"
-            width={413}
-            height={413}
+            width={250}
+            height={250}
           />
           <svg
             className="likefavorite2"
@@ -48,6 +50,7 @@ const Choise2 = () => {
           </div>
         </div>
       ))}
+      <Pagination />
     </div>
   );
 };

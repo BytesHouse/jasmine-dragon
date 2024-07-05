@@ -4,8 +4,9 @@ import { useState } from "react";
 import Choise from "../Choise/Choise";
 import Choise2 from "../Choise2/Choise2";
 import Sort from "../Sort/Sort";
-import ChocoMenu from "../../ui-kit/icons/ChocoMenu/ChocoMenu";
-import LineMenu from "../../ui-kit/icons/LineMenu/LineMenu";
+import ChocoMenu from "@/ui-kit/icons/ChocoMenu/ChocoMenu";
+import LineMenu from "@/ui-kit/icons/LineMenu/LineMenu";
+import CloseMini from "../../../public/assets/icons/CloseMini";
 
 const Filters = () => {
   const [isHorizontal, setIsHorizontal] = useState(true); // Состояние для отслеживания текущего вида товаров
@@ -25,142 +26,49 @@ const Filters = () => {
     setIsActive(!isActive);
   };
   return (
-    <div className="sortirovka">
-      <div className="flex justify-between flex-row gap-12">
-        <Sort />
-        <div className="thelastsort">
-          <p className="psortmenu">Вид товара:</p>
-          <button
-            onClick={toggleHorizontalView}
-            className="thelastsvg"
-            id="margin20px"
-          >
-            <ChocoMenu state={isHorizontal} />
+    <>
+      <div className="container !gap-[25px] !py-[50px]">
+        <div className="flex justify-between flex-row gap-12 col-span-full">
+          <Sort />
+          <div className="thelastsort">
+            <p className="psortmenu">Вид товара:</p>
+            <button
+              onClick={toggleHorizontalView}
+              className="thelastsvg"
+              id="margin20px"
+            >
+              <ChocoMenu state={isHorizontal} />
+            </button>
+            <button onClick={toggleVerticalView} className="thelastsvg">
+              <LineMenu state={!isHorizontal} />
+            </button>
+          </div>
+        </div>
+        <div className="row2sortmenu col-span-full">
+          <button className="buttonsec3">
+            Черные чаи
+            <CloseMini />
           </button>
-          <button onClick={toggleVerticalView} className="thelastsvg">
-            <LineMenu state={!isHorizontal} />
+          <button className="buttonsec3">
+            Оолонг
+            <CloseMini />
+          </button>
+          <button className="buttonsec3">
+            Черные чаи
+            <CloseMini />
+          </button>
+          <button className="buttonsec3">
+            Красные чаи
+            <CloseMini />
+          </button>
+          <button className="buttonsec3">
+            Зеленые чаи
+            <CloseMini />
           </button>
         </div>
       </div>
-      <div className="row2sortmenu">
-        <button className="buttonsec3">
-          Черные чаи
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18.75 5.25L5.25 18.75"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M18.75 18.75L5.25 5.25"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-        <button className="buttonsec3">
-          Оолонг
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18.75 5.25L5.25 18.75"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M18.75 18.75L5.25 5.25"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-        <button className="buttonsec3">
-          Черные чаи
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18.75 5.25L5.25 18.75"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M18.75 18.75L5.25 5.25"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-        <button className="buttonsec3">
-          Красные чаи
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18.75 5.25L5.25 18.75"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M18.75 18.75L5.25 5.25"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-        <button className="buttonsec3">
-          Зеленые чаи
-          <svg
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M18.75 5.25L5.25 18.75"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M18.75 18.75L5.25 5.25"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
-        </button>
-      </div>
       {isHorizontal ? <Choise /> : <Choise2 />}
-    </div>
+    </>
   );
 };
 export default Filters;

@@ -1,11 +1,13 @@
 // import avatar from "../../../public/assets/Images/avatar.png";
 import Image from "next/image";
+import ArrowLeft from "../../../public/assets/icons/ArrowLeft";
+import ArrowRight from "../../../public/assets/icons/ArrowRight";
 
 const Feedback = () => {
   return (
-    <div className="Feedbacks">
-      <h3 className="h3contacts">Отзывы</h3>
-      <div className="People">
+    <div className="container">
+      <h5 className="col-span-full">Отзывы</h5>
+      <div className="People col-span-full">
         <div className="Liudi">
           <Image
             className="avatar"
@@ -14,15 +16,15 @@ const Feedback = () => {
             width={150}
             height={150}
           />
-          <div className="textliudi">
-            <h2 className="h2feedbacks">Анатолий Кирияк</h2>
-            <p className="pfeedbacks">
+          <div className="flex flex-col gap-[25px]">
+            <h4 className="text-white">Анатолий Кирияк</h4>
+            <p className="p1 text-white">
               Отличная чайная со своей клёвой атмосферой, чайчиками и конечно же
               баристой, который разбирается во всех нюасмах
             </p>
           </div>
         </div>
-        <div className="Liudi">
+        {/* <div className="Liudi">
           <Image
             className="avatar"
             src="/assets/Images/avatar.png"
@@ -36,8 +38,8 @@ const Feedback = () => {
               Замечательный выбор чайной для отдыха и чилла
             </p>
           </div>
-        </div>
-        <div className="Liudi">
+        </div> */}
+        {/* <div className="Liudi">
           <Image
             className="avatar"
             src="/assets/Images/avatar.png"
@@ -52,54 +54,16 @@ const Feedback = () => {
               баристой, который разбирается во всех нюасмах
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
-      <div className="linksfeedbacks">
+      <div className="linksfeedbacks col-span-full">
         <a className="linkfeedbacks textfeedback" href="index.html">
-          <svg
-            width="26"
-            height="26"
-            viewBox="0 0 26 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M21.5938 12.9902L4.40625 12.9902"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M11.4375 5.95898L4.40625 12.9902L11.4375 20.0215"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <ArrowLeft />
           Старые
         </a>
         <a className="linkfeedbacks textfeedback" href="index.html">
           Новые
-          <svg
-            width="26"
-            height="26"
-            viewBox="0 0 26 26"
-            fill="none"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M4.40625 12.9902L21.5938 12.9902"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-            <path
-              d="M14.5625 20.0215L21.5938 12.9902L14.5625 5.95898"
-              stroke="#B5EAEE"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            />
-          </svg>
+          <ArrowRight />
         </a>
       </div>
     </div>
