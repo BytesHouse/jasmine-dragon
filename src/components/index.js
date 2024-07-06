@@ -8,8 +8,8 @@ import Hotsales from "./Hotsales/Hotsales";
 import Contacts from "./Contacts/Contacts";
 import Feedback from "./Feedback/Feedback";
 import Footerblock1 from "./Footerblock1/Footerblock1";
-import Footerbuttons1 from "./Footerbuttons1/Footerbuttons1";
-import Footerbuttons2 from "./Footerbuttons2/Footerbuttons2";
+import Footerbuttons from "./Footerbuttons/Footerbuttons";
+// import Footerbuttons2 from "./Footerbuttons2/Footerbuttons2";
 import Lines from "./Lines/Lines";
 import Header from "./Header/Header";
 import Choise2dish from "./Choise2dish/Choise2dish";
@@ -19,4 +19,26 @@ import HeaderForMenu from "./HeaderForMenu/HeaderForMenu";
 import ChoiseForCart from "./ChoiseForCart/ChoiseForCart";
 import Counter from "./Counter/Counter";
 import Checkbox from "./Checkbox/Checkbox";
-export { Filters,Filterdish,Counter,Checkbox,Choisedish,Choise2dish,HeaderForMenu,ChoiseForCart, Lines, Header, Footerblock1, Footerbuttons1, Footerbuttons2,  Choise, Flexrow, Pagination, Lables, Store, Hotsales, Contacts, Feedback}
+export {
+  Filters,
+  Filterdish,
+  Counter,
+  Checkbox,
+  Choisedish,
+  Choise2dish,
+  HeaderForMenu,
+  ChoiseForCart,
+  Lines,
+  Header,
+  Footerblock1,
+  Footerbuttons,
+  // Footerbuttons2,
+  Choise,
+  Flexrow,
+  Pagination,
+  Lables,
+  Store,
+  Hotsales,
+  Contacts,
+  Feedback,
+};

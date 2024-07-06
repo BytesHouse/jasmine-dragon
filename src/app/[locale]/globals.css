@@ -51,6 +51,15 @@
   p.p4 {
     @apply text-p4;
   }
+  .footer-ol > div > li::before {
+    @apply text-p1 text-blue-light font-Nunito-Sans not-italic leading-[130%] mt-auto;
+  }
+  .footerbutton {
+    @apply text-blue-light font-Playfair-Display italic leading-[120%] text-h4 text-start font-medium;
+  }
+  #footerShop a {
+    @apply text-p1 text-blue-light font-Nunito-Sans not-italic leading-[130%] flex items-center gap-[10px] ml-[15px];
+  }
 }
 @layer utilities {
   .col-span-half {
@@ -58,6 +67,9 @@
   }
   .col-span-third {
     grid-column: span var(--third) / span var(--third);
+  }
+  .grid-cols-half {
+    grid-template-columns: repeat(var(--half), 1fr);
   }
 }
 
@@ -252,7 +264,7 @@ header {
   color: var(--blue-light);
 }
 .pcontacts:hover,
-footer a:hover {
+.linkfooter:hover {
   text-decoration: underline !important;
 }
 
@@ -364,7 +376,7 @@ footer a:hover {
   gap: 25px;
   width: 705px;
 } */
-
+/* 
 .footerbutton {
   display: flex;
   flex-direction: row;
@@ -380,7 +392,7 @@ footer a:hover {
   gap: 15px;
   color: var(--blue-light);
   border: none;
-}
+} */
 
 .knopkifooter {
   display: flex;
@@ -882,6 +894,19 @@ body {
   margin: 0 auto;
   position: relative;
   background-color: rgba(39, 62, 64, 1);
+}
+
+.footer-ol {
+  counter-reset: item 0;
+}
+.footer-ol > div > li {
+  display: flex;
+}
+.footer-ol > div > li:not(#footerShop)::before {
+  content: counter(item, decimal-leading-zero) " ";
+  counter-increment: item 1;
+  margin-right: 15px;
+  font-weight: 600;
 }
 
 .buttonsec3 {
