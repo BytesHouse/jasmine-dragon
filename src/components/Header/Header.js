@@ -13,7 +13,7 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ImageSection from "../ImageSection/Imagesection";
-import { Footerbuttons1, Footerbuttons2 } from "../index";
+import { Footerbuttons, Footerbuttons2 } from "../index";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -62,8 +62,8 @@ const Header = () => {
           <div className="flex gap-[50px]">
             <ImageSection />
             <div className="flex flex-col pt-[30px] gap-[25px]">
-              <Footerbuttons1 />
-              <Footerbuttons2 />
+              <Footerbuttons />
+              {/* <Footerbuttons2 /> */}
             </div>
           </div>
         )}

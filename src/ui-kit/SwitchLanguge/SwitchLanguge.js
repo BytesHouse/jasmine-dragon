@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { usePathname } from "next/navigation";
 import { Arrowdown, Arrowup } from "../icons";
 import { locales } from "@/i18n";
 import Link from "next/link";
@@ -8,6 +9,11 @@ import Link from "next/link";
 const SwitchLanguage = () => {
   const [isShow, setIsShow] = useState(false);
   const [choice, setChoice] = useState(locales[0]);
+
+  let pathName = usePathname();
+  // pathName = pathName.slice(3, pathName.length);
+  pathName = pathName.replace(/^.{3}/, "");
+  // console.log(pathName);
 
   const handleChangeIsShow = () => setIsShow(!isShow);
 
@@ -30,20 +36,23 @@ const SwitchLanguage = () => {
         </div>
         {isShow && (
           <ul className="absolute top-[100%] -left-[1px] w-[100px]">
-            {locales.map((item, index) => (
-              <li
-                className="hover:bg-blue cursor-pointer last:rounded-b-2xl  border-x border-b capitalize"
-                onClick={() => handleChangeChoice(item)}
-                key={index}
-              >
-                <Link
-                  className="w-full block py-[5px] px-[15px]"
-                  href={`/${item}`}
-                >
-                  {item}
-                </Link>
-              </li>
-            ))}
+            {locales.map(
+              (item, index) =>
+                choice !== item && (
+                  <li
+                    className="hover:bg-blue cursor-pointer last:rounded-b-2xl  border-x border-b capitalize"
+                    onClick={() => handleChangeChoice(item)}
+                    key={index}
+                  >
+                    <Link
+                      className="w-full block py-[5px] px-[15px] text-h5"
+                      href={`/${item}${pathName}`}
+                    >
+                      {item}
+                    </Link>
+                  </li>
+                )
+            )}
           </ul>
         )}
       </div>

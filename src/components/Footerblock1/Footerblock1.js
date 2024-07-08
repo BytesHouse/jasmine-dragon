@@ -37,19 +37,19 @@ const Footerblock1 = () => {
         </div>
       </div>
       <div className="svgfooter">
-        <a href="facebook.com">
+        <a href="https://facebook.com">
           <Facebook />
         </a>
-        <a href="x.com">
+        <a href="https://x.com">
           <X />
         </a>
-        <a href="instagram.com">
+        <a href="https://instagram.com">
           <Instagram />
         </a>
-        <a href="t.me">
+        <a href="https://t.me">
           <Telegram />
         </a>
-        <a href="vk.com">
+        <a href="https://vk.com">
           <Vk />
         </a>
       </div>

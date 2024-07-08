@@ -7,12 +7,11 @@ const Contacts = () => {
       <h5 className="col-span-full">Контакты</h5>
 
       <Image
-        id="imgcontacts"
         src="/assets/Images/teabig.png"
         alt="tea"
         width={560}
         height={654}
-        className="col-span-5 "
+        className="col-span-5"
       />
       <div className="sectioncontacts col-span-7">
         <div className="subseccontacts">

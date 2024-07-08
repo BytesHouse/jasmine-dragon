@@ -134,9 +134,6 @@ html {
   width: 100vw;
 }
 
-header {
-  grid-column: 1 / -1;
-}
 .grid-column {
   grid-column: 1 / -1;
 }
@@ -168,15 +165,8 @@ header {
   gap: 25px;
 }
 
-#imgcontacts {
-  width: 560px;
-  height: 654px;
-  align-self: stretch;
-}
-
-.Liudi {
+.feedback {
   display: flex;
-  flex-direction: row;
   padding: 25px;
   width: calc((var(--column) * 5) + (var(--gutter) * 4));
   gap: 25px;
@@ -184,19 +174,16 @@ header {
   transition: background-color 0.3s ease, border 0.3s ease;
 }
 
-.Liudi:hover {
+.feedback:hover {
   background-color: var(--green-light);
   border: 3px var(--blue) solid;
 }
 
-.h2feedbacks {
-  font-family: var(--Playfair-Display);
-  font-style: italic;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 120%;
-  color: var(--white);
+.swiper-wrapper {
+  display: flex;
+  width: fit-content;
 }
+
 .fontnunito {
   font-family: var(--Nunito-sans);
 }
@@ -1079,7 +1066,8 @@ body {
   transition: opacity 0.3s ease, border 0.3s ease;
 }
 
-.linkfeedbacks:hover {
+.linkfeedbacks:hover,
+.swiper-button-disabled {
   opacity: 0.4;
   border: 1px var(--blue) solid;
 }
