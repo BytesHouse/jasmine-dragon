@@ -4,11 +4,13 @@ import PrivacyBlock from "./components/PrivacyBlock/PrivacyBlock";
 import { privacyText } from "@/config/constants";
 const Privacy = () => {
   return (
-    <div className="container">
+    <>
       <Header />
-      <PrivacyBlock isPrivate data={privacyText} />
+      <div className="container">
+        <PrivacyBlock isPrivate data={privacyText} />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 };
 
