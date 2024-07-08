@@ -60,6 +60,9 @@
   #footerShop a {
     @apply text-p1 text-blue-light font-Nunito-Sans not-italic leading-[130%] flex items-center gap-[10px] ml-[15px];
   }
+  .button3 {
+    @apply text-white font-Playfair-Display italic leading-[120%] w-full text-h5 font-medium;
+  }
 }
 @layer utilities {
   .col-span-half {
@@ -168,7 +171,7 @@ html {
 .feedback {
   display: flex;
   padding: 25px;
-  width: calc((var(--column) * 5) + (var(--gutter) * 4));
+  width: calc((var(--column) * 5) + (var(--gutter) * 4)) !important;
   gap: 25px;
   border: 3px var(--green-bg) solid;
   transition: background-color 0.3s ease, border 0.3s ease;
@@ -177,11 +180,6 @@ html {
 .feedback:hover {
   background-color: var(--green-light);
   border: 3px var(--blue) solid;
-}
-
-.swiper-wrapper {
-  display: flex;
-  width: fit-content;
 }
 
 .fontnunito {
@@ -645,33 +643,15 @@ html {
 
 .button3 {
   background-color: transparent;
+  max-width: 354px;
   padding: 25px;
-  font-family: var(--Playfair-Display);
-  font-style: italic;
-  font-weight: 500;
-  font-size: 27px;
-  line-height: 120%;
-  text-align: center;
   color: #ffffff;
   border: 1px var(--blue) solid;
   transition: background-color 0.3s ease;
-  width: 100%;
 }
 
 .button3:hover {
   background-color: var(--blue);
-}
-
-#coffee-table {
-  height: 295px;
-}
-
-.positforbutt2 {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15px;
-  gap: 15px;
-  justify-content: center;
 }
 
 .lines {
@@ -682,7 +662,8 @@ html {
 }
 
 .line {
-  /*width: 227px;*/
+  display: flex;
+  max-width: 227px;
   flex: 1;
   height: 15px;
   background: var(--blue-light);
@@ -690,10 +671,15 @@ html {
   border-radius: 100px;
   transition: background-color 0.3s ease, opacity 0.3s ease;
 }
-
-.line:hover {
+.line:hover,
+.swiper-pagination-bullet-active {
   background-color: var(--blue-light);
   opacity: 1;
+}
+.swiper-pagination {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
 }
 
 .lineforsec3 {
