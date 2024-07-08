@@ -1,5 +1,49 @@
 {
-  "Index": {
-    "title": "Buna brînza!"
+  "confirm_parola": "Confirmă parola",
+  "hello": "Menu",
+  "parola": "Parola",
+  "Privacy": {
+    "privacy_text_0": "Politica de confidențialitate",
+    "privacy_text_00": "Colectăm informațiile pe care ni le furnizați atunci când vă înregistrați pe site, plasați o comandă sau completați formulare de feedback. Aceste informații pot include numele, adresa de e-mail, numărul de telefon și adresa de expediere.",
+    "privacy_text_01": "Folosim informațiile pe care le colectăm pentru a procesa tranzacții, pentru a vă personaliza experiența, pentru a îmbunătăți site-ul nostru web și pentru a comunica cu dumneavoastră cu privire la comenzi, produse și promoții. De asemenea, putem folosi informațiile dumneavoastră pentru a ne conforma obligațiilor legale și pentru a ne aplica politicile.",
+    "privacy_text_1": "Noi, cei de la Jasmine Dragon, prețuim încrederea dumneavoastră și ne angajăm să vă protejăm confidențialitatea. Această Politică de confidențialitate explică modul în care colectăm, folosim, partajăm și stocăm informațiile dumneavoastră personale atunci când utilizați site-ul nostru web.",
+    "privacy_text_2": "Nu vindem, comercializăm sau transferăm informațiile dumneavoastră personale către terți fără consimțământul dumneavoastră. Cu toate acestea, este posibil să împărtășim informațiile dumneavoastră cu terțe părți de încredere care ne ajută să ne operam site-ul web, să ne desfășurăm afacerile sau să vă deservăm, atâta timp cât acele părți sunt de acord să păstreze confidențialitatea informațiilor.",
+    "privacy_text_3": "Luăm o varietate de măsuri de securitate pentru a asigura siguranța informațiilor dumneavoastră personale atunci când plasați o comandă sau introduceți, trimiteți sau accesați informațiile dumneavoastră personale.",
+    "privacy_text_4": "Vă păstrăm informațiile personale atâta timp cât este necesar pentru a îndeplini scopurile prezentate în această Politică de confidențialitate, cu excepția cazului în care o perioadă mai lungă de păstrare este necesară sau permisă de lege.",
+    "privacy_text_5": "Aveți dreptul de a accesa, corecta, actualiza sau șterge informațiile dumneavoastră personale în orice moment. De asemenea, puteți renunța la primirea de comunicări promoționale de la noi, urmând instrucțiunile de renunțare furnizate în respectivele comunicări.",
+    "privacy_text_6": "Ne rezervăm dreptul de a modifica această Politică de confidențialitate în orice moment. Dacă aducem modificări materiale acestei politici, vă vom anunța aici sau printr-o notificare pe site-ul nostru web.",
+    "privacy_text_7": "Dacă aveți întrebări despre această politică de confidențialitate, vă rugăm să ne contactați la tea.jasminedragon@gmail.com.",
+    "privacy_title_0": "Colectarea de informații",
+    "privacy_title_1": "Utilizarea informațiilor",
+    "privacy_title_2": "Schimb de informatii",
+    "privacy_title_3": "Protejarea datelor",
+    "privacy_title_4": "Stocare a datelor",
+    "privacy_title_5": "Drepturile tale",
+    "privacy_title_6": "Modificări ale acestei politici",
+    "privacy_title_7": "Contactaţi-ne"
+  },
+  "reg_butt": "Inregistreaza-te",
+  "registration": "Registrarea",
+  "reg_social": "Înregistrare folosind rețelele sociale",
+  "reg_to_buy": "Înregistrează-te pentru a cumpăra ceai",
+  "sign_in": "Intră pe site",
+  "sign_to_buy": "Vizitați site-ul web pentru a cumpăra ceai",
+  "Terms": {
+    "terms_text_0": "Termeni de utilizare",
+    "terms_text_00": "Sunteți de acord să utilizați site-ul nostru numai în scopuri legale și să respectați toate legile și reglementările aplicabile.",
+    "terms_text_01": "Tot conținutul de pe acest site, inclusiv textul, grafica, logo-urile, imaginile, audio și video, este deținut de Jasmine Dragon Tea Room sau de licențiatorul acestuia și este protejat de drepturile de autor și alte legi privind proprietatea intelectuală.",
+    "terms_text_1": "Bine ați venit pe site-ul Jasmine Dragon Tea Room. Vă rugăm să citiți Termenii noștri de utilizare înainte de a continua să utilizați site-ul nostru. Accesul și utilizarea site-ului nostru reprezintă acceptarea de către dumneavoastră a acestor Termeni. Dacă nu sunteți de acord cu ele, vă rugăm să nu folosiți site-ul nostru.",
+    "terms_text_2": "Nu suntem responsabili pentru nicio daune sau pierderi care decurg din utilizarea site-ului nostru sau din incapacitatea de a-l folosi.",
+    "terms_text_3": "Site-ul nostru poate conține link-uri către site-uri web terțe. Nu suntem responsabili pentru conținutul acelor site-uri sau pentru orice pierdere sau daune rezultate din utilizarea acelor site-uri.",
+    "terms_text_4": "Ne rezervăm dreptul de a modifica acești Termeni de utilizare în orice moment. Modificările intră în vigoare din momentul în care sunt publicate pe site-ul nostru.",
+    "terms_text_5": "Prin utilizarea site-ului nostru sunteți de acord cu acești Termeni de utilizare.",
+    "terms_text_6": "Dacă aveți întrebări despre această politică de confidențialitate, vă rugăm să ne contactați la tea.jasminedragon@gmail.com.",
+    "terms_title_0": "Utilizarea site-ului",
+    "terms_title_1": "Proprietate intelectuală",
+    "terms_title_2": "Limitări de răspundere",
+    "terms_title_3": "Link-uri către site-uri terțe",
+    "terms_title_4": "Modificări ale Termenilor de utilizare",
+    "terms_title_5": "Acord",
+    "terms_title_6": "Contactaţi-ne"
   }
 }

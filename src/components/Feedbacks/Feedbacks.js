@@ -12,7 +12,7 @@ import { Navigation } from "swiper/modules";
 // import "swiper/css";
 // import "swiper/css/navigation";
 
-const Feedback = () => {
+const Feedbacks = () => {
   const prevRef = useRef(null);
   const nextRef = useRef(null);
 
@@ -138,4 +138,4 @@ const Feedback = () => {
   );
 };
 
-export default Feedback;
+export default Feedbacks;

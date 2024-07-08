@@ -44,7 +44,7 @@ const Filters = () => {
             </button>
           </div>
         </div>
-        <div className="row2sortmenu col-span-full">
+        {/* <div className="row2sortmenu col-span-full">
           <button className="buttonsec3">
             Черные чаи
             <CloseMini />
@@ -65,7 +65,7 @@ const Filters = () => {
             Зеленые чаи
             <CloseMini />
           </button>
-        </div>
+        </div> */}
       </div>
       {isHorizontal ? <Choise /> : <Choise2 />}
     </>

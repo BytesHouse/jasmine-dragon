@@ -7,7 +7,7 @@ import {
   Store,
   Hotsales,
   Contacts,
-  Feedback,
+  Feedbacks,
 } from "../index";
 
 const SectionThree = () => {
@@ -19,7 +19,7 @@ const SectionThree = () => {
       <Store />
       <Hotsales />
       <Contacts />
-      <Feedback />
+      <Feedbacks />
     </>
   );
 };

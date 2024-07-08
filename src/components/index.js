@@ -6,7 +6,7 @@ import Lables from "./Lables/Lables";
 import Store from "./Store/Store";
 import Hotsales from "./Hotsales/Hotsales";
 import Contacts from "./Contacts/Contacts";
-import Feedback from "./Feedback/Feedback";
+import Feedbacks from "./Feedbacks/Feedbacks";
 import Footerblock1 from "./Footerblock1/Footerblock1";
 import Footerbuttons from "./Footerbuttons/Footerbuttons";
 // import Footerbuttons2 from "./Footerbuttons2/Footerbuttons2";
@@ -40,5 +40,5 @@ export {
   Store,
   Hotsales,
   Contacts,
-  Feedback,
+  Feedbacks,
 };
