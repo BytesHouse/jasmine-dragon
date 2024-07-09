@@ -80,7 +80,10 @@ const Filter = () => {
       </div>
       {show && (
         <div className="border-[var(--blue-light)] bg-[var(--green-light)] w-[250px] absolute left-[calc(100%+20px)] top-0 border flex flex-col gap-[15px] p-[25px] text-white">
-          <div className="text-[var(--blue-light)] flex flex-col gap-[15px]" onSubmit={handleSubmitFilter}>
+          <div
+            className="text-[var(--blue-light)] flex flex-col gap-[15px]"
+            onSubmit={handleSubmitFilter}
+          >
             <div className={toDo}>
               <span className="font-semibold text-[18px]">Наличие</span>
               <div>
@@ -125,11 +128,19 @@ const Filter = () => {
             </div>
             <div className={toDo}>
               <span className="font-semibold text-[18px]">Цена</span>
-              <RangeSlider value={price} onChange={setPrice} min={0} max={100} step={5} />
+              <RangeSlider
+                value={price}
+                onChange={setPrice}
+                min={0}
+                max={100}
+                step={5}
+              />
             </div>
             <div className="flex flex-col gap-[15px]">
               <ButtonPrimary func={handleSubmitFilter}>Применить</ButtonPrimary>
-              <ButtonSecondary func={handleResetFilter}>Сбросить</ButtonSecondary>
+              <ButtonSecondary func={handleResetFilter}>
+                Сбросить
+              </ButtonSecondary>
             </div>
           </div>
         </div>

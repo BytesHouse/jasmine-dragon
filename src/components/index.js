@@ -18,7 +18,7 @@ import Filterdish from "./Filterdish/Filterdish";
 import HeaderForMenu from "./HeaderForMenu/HeaderForMenu";
 import ChoiseForCart from "./ChoiseForCart/ChoiseForCart";
 import Counter from "./Counter/Counter";
-import Checkbox from "./Checkbox/Checkbox";
+import Checkbox from "./Agreements/Agreements";
 export {
   Filters,
   Filterdish,

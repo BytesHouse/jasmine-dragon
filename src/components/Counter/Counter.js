@@ -1,8 +1,8 @@
 "use client";
 
-import Image from "next/image";
 import { useState } from "react";
-// import MinusIcon from "../../../public/assets/Images/Minus.svg";
+import Minus from "../../../public/assets/Icons/Minus";
+import Plus from "../../../public/assets/Icons/Plus";
 // import PlusIcon from "../../../public/assets/Images/Plus.svg";
 
 function Counter() {
@@ -21,23 +21,11 @@ function Counter() {
   return (
     <div className="counter flex flex-row items-center gap-[5px]  ">
       <button className="minus-button flex cursor-pointer" onClick={decrement}>
-        <Image
-          src="/assets/Images/Minus.svg"
-          alt="Minus"
-          width={36}
-          height={36}
-        />
+        <Minus />
       </button>
-      <div className="font-semibold text-center text-[20px] font-[500]">
-        {count}
-      </div>
+      <p className="font-semibold p1 px-[10px] text-center">{count}</p>
       <button className="plus-button flex" onClick={increment}>
-        <Image
-          src="/assets/Images/Plus.svg"
-          alt="Plus"
-          width={36}
-          height={36}
-        />
+        <Plus />
       </button>
     </div>
   );
