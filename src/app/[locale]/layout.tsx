@@ -3,6 +3,8 @@ import { getMessages } from "next-intl/server";
 import "./globals.css";
 
 import { Metadata } from "next";
+import { Header } from "@/components";
+import Footer from "@/components/Footer/Footer";
 
 export const metadata: Metadata = {
   title: {
@@ -28,7 +30,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body>
         <NextIntlClientProvider messages={messages}>
+          <Header />
           {children}
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

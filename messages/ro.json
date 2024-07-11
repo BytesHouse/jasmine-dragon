@@ -45,5 +45,14 @@
     "terms_title_4": "Modificări ale Termenilor de utilizare",
     "terms_title_5": "Acord",
     "terms_title_6": "Contactaţi-ne"
+  },
+  "Breadcrumbs": {
+    "ro": "Acasă",
+    "contacts": "Contacte",
+    "menu": "Meniu",
+    "terms": "Termeni de utilizare",
+    "privacy": "Confidențialitate",
+    "ondatra": "Ondatra",
+    "shopping_cart": "Coșul de cumpărături"
   }
 }

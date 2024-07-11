@@ -7,25 +7,33 @@ import TeaLeaves from "../../../public/assets/Icons/TeaLeaves";
 import Image from "next/image";
 import Strelka from "../../../public/assets/Icons/Strelka";
 import SwitchLanguage from "../../ui-kit/SwitchLanguge/SwitchLanguge";
+import { useLocale } from "next-intl";
 
-const Footerbuttons = () => {
+const Footerbuttons = ({ isVertical = false }) => {
   const [isShopShow, setIsShopShow] = useState(false);
+  const lang = useLocale();
 
   return (
-    <ol className="grid grid-cols-half gap-[var(--gutter)] justify-between col-start-7 col-end-13 footer-ol">
+    <ol
+      className={
+        !isVertical
+          ? `grid grid-cols-half gap-[var(--gutter)] justify-between col-start-7 col-end-13 footer-ol`
+          : `flex flex-col gap-[var(--gutter)] footer-ol py-[25px]`
+      }
+    >
       <div className="flex flex-col gap-[25px] col-span-3">
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}`} className="footerbutton">
             О нас
           </Link>
         </li>
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}/menu`} className="footerbutton">
             Меню
           </Link>
         </li>
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}`} className="footerbutton">
             Магазин
           </Link>
           <button
@@ -42,47 +50,45 @@ const Footerbuttons = () => {
             id="footerShop"
             className={`flex flex-col gap-[10px] -mt-[10px] transition`}
           >
-            <Link href={"/"}>
+            <Link href={`/${lang}`}>
               <Cup />
               Посуда
             </Link>
-            <Link href={"/"}>
+            <Link href={`/${lang}`}>
               <TeaLeaves />
               Чай на развес
             </Link>
           </div>
         )}
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}`} className="footerbutton">
             Корзина
           </Link>
         </li>
       </div>
       <div className="flex flex-col gap-[25px] col-span-3">
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}`} className="footerbutton">
             Профиль
           </Link>
         </li>
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}`} className="footerbutton">
             Избранное
           </Link>
         </li>
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}`} className="footerbutton">
             Карьера
           </Link>
         </li>
         <li>
-          <Link href={"/"} className="footerbutton">
+          <Link href={`/${lang}`} className="footerbutton">
             Контакты
           </Link>
         </li>
         <li>
-          <Link href={"/"} className="footerbutton">
-            Язык
-          </Link>
+          <p className="footerbutton">Язык</p>
           <SwitchLanguage />
         </li>
       </div>
