@@ -8,18 +8,15 @@ import ImageSection from "../../../components/ImageSection/Imagesection";
 
 const Menu = () => {
   return (
-    <div className="container">
-      <HeaderForMenu />
-      <div className="flex gap-[50px]">
-        <ImageSection />
-        <div className="flex flex-col pt-[30px] gap-[25px]">
-          <Footerbuttons />
-          {/* <Footerbuttons2 /> */}
-        </div>
+    <div className="container !pt-[25px]">
+      <ImageSection className="col-span-9" />
+      <div className="col-span-3">
+        <Footerbuttons isVertical={true} />
+        {/* <Footerbuttons2 /> */}
       </div>
-      <div className="col-span-full">
+      {/* <div className="col-span-full">
         <Footerfinal />
-      </div>
+      </div> */}
     </div>
   );
 };

@@ -5,10 +5,12 @@ import { usePathname } from "next/navigation";
 import { Arrowdown, Arrowup } from "../icons";
 import { locales } from "@/i18n";
 import Link from "next/link";
+import { useLocale } from "next-intl";
 
 const SwitchLanguage = () => {
+  const lang = useLocale();
   const [isShow, setIsShow] = useState(false);
-  const [choice, setChoice] = useState(locales[0]);
+  const [choice, setChoice] = useState(lang);
 
   let pathName = usePathname();
   // pathName = pathName.slice(3, pathName.length);

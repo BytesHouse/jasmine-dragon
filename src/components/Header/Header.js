@@ -13,7 +13,8 @@ import {
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import ImageSection from "../ImageSection/Imagesection";
-import { Footerbuttons, Footerbuttons2 } from "../index";
+import { Footerbuttons } from "../index";
+import Breadcrumbs from "@/ui-kit/Breadcrumbs/Breadcrumbs";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -68,6 +69,11 @@ const Header = () => {
           </div>
         )}
       </div>
+      {(pathname !== "/ro") & (pathname !== "/ru") && (
+        <Breadcrumbs
+          breadcrumbs={pathname.split("/").slice(1, pathname.length)}
+        />
+      )}
     </header>
   );
 };

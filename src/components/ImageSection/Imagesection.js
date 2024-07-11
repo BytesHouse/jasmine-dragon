@@ -3,19 +3,21 @@
 // import rect2 from '..//../../assets/Images/Rectangle 23.png';
 // import rect3 from '..//../../assets/Images/Rectangle 22.png';
 import Image from "next/image";
-const ImageSection = () => {
+const ImageSection = ({ ...props }) => {
   return (
-    <div className="ml-[40px] w-[1045px] h-[800px]">
+    <div
+      className={`h-[800px] max-w-[1048px] flex justify-center items-center relative ${props.className}`}
+    >
       <Image
-        className="absolute  my-[85px] mx-[285px]"
+        className=""
         // w-[500px] h-[632px]
         src="/assets/Images/Rectangle 21.png"
         alt="bigphoto"
-        width={500}
+        width={473}
         height={632}
       />
       <Image
-        className="absolute mt-[180px] ml-[140px]"
+        className="absolute top-[178px] left-[133px]"
         // w-[293px] h-[274px]
         src="/assets/Images/table.png"
         alt="table"
@@ -23,7 +25,7 @@ const ImageSection = () => {
         height={274}
       />
       <Image
-        className="absolute mt-[29%] ml-[44%]"
+        className="absolute top-[452px] right-[88px]"
         //  w-[307px] h-[287px]
         src="/assets/Images/Rectangle 23.png"
         alt="rect2"
@@ -31,7 +33,7 @@ const ImageSection = () => {
         height={287}
       />
       <Image
-        className="absolute mt-[38%] ml-[8%]"
+        className="absolute bottom-0 left-[96px]"
         //  w-[235px] h-[220px]
         src="/assets/Images/Rectangle 22.png"
         alt="rect2"

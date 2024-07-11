@@ -1,6 +1,6 @@
 // import { Link } from 'react-router-dom';
 import Link from "next/link";
-import useLocale from "@/hooks/useLocale";
+import { useLocale } from "next-intl";
 
 const Footerfinal = () => {
   const lang = useLocale();
