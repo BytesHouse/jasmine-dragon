@@ -61,7 +61,7 @@ const Footerbuttons = ({ isVertical = false }) => {
           </div>
         )}
         <li>
-          <Link href={`/${lang}`} className="footerbutton">
+          <Link href={`/${lang}/shopping_cart`} className="footerbutton">
             Корзина
           </Link>
         </li>

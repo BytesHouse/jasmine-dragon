@@ -8,11 +8,9 @@ import Footer from "../../../components/Footer/Footer";
 const TeasMenu = () => {
   return (
     <div className="container">
-      <Header />
       <ContentSubHeader2 />
       <Direction />
       <Menu />
-      <Footer />
     </div>
   );
 };

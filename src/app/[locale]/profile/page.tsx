@@ -8,8 +8,7 @@ const Profiles = () => {
   return (
     <div className="container">
       <div className="col-span-full">
-        <Header />
-        <DirectionForProfile />
+        {/* <DirectionForProfile /> */}
         <UserProfile />
         <RecentlyOrders array={orders} />
       </div>

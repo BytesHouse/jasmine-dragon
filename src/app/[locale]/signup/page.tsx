@@ -5,9 +5,7 @@ import Footer from "@/components/Footer/Footer";
 const Registration = () => {
   return (
     <div className="container">
-      <Header />
       <RegBlock />
-      <Footer />
     </div>
   );
 };
