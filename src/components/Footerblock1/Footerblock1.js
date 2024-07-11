@@ -36,7 +36,7 @@ const Footerblock1 = () => {
           <button className="buttonfooter">Подписаться</button>
         </div>
       </div>
-      <div className="svgfooter">
+      <div className="flex gap-[25px]">
         <a href="https://facebook.com">
           <Facebook />
         </a>

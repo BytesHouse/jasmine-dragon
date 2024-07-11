@@ -4,15 +4,17 @@ import Recently_viewed from "../../../../../components/Recently_viewed/Recently_
 
 const Menu = () => {
   return (
-    <div className="section3">
-      <h1 className="h1sec2-1">Чайное меню</h1>
+    <>
+      <div className="container !pb-0">
+        <h4 className="col-span-full">Чайное меню</h4>
+      </div>
       <Filters />
       <Lables />
       <Hotsales />
-      <Pagination />
+      {/* <Pagination /> */}
       <Recently_viewed />
-      <Pagination />
-    </div>
+      {/* <Pagination /> */}
+    </>
   );
 };
 

@@ -32,7 +32,7 @@ const ContentSubHeader1 = () => {
         }}
         spaceBetween={25}
         centeredSlides={true}
-        className="container "
+        className="container"
       >
         <SwiperSlide>
           <div className="container items-center !py-[50px]">

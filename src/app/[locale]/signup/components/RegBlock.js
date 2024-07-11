@@ -12,6 +12,13 @@ import { auth } from "@/config/firebase";
 import EyeIcon from "@/ui-kit/icons/EyeIcon/EyeIcon";
 import Checkbox from "@/ui-kit/Checkbox/Checkbox";
 import Image from "next/image";
+import { useLocale, useTranslations } from "next-intl";
+
+import X from "../../../../../public/assets/Icons/X";
+import Instagram from "../../../../../public/assets/Icons/Instagram";
+import Telegram from "../../../../../public/assets/Icons/Telegram";
+import Vk from "../../../../../public/assets/Icons/Vk";
+import Facebook from "../../../../../public/assets/Icons/Facebook";
 
 // import facebook from "../../../../../public/assets/icons/facebook.svg";
 // import instagram from "../../../../../public/assets/icons/instagram.svg";
@@ -22,6 +29,8 @@ const RegBlock = () => {
   // const {t} = useTranslation();
   //   const navigate = useNavigate();
   const { push } = useRouter();
+  const t = useTranslations("SignInUp");
+  const lang = useLocale();
 
   //   cont {email, password} = useRegistrationForm();
 
@@ -56,27 +65,36 @@ const RegBlock = () => {
   const handleClickShowConfirmPass = () => setShowConfirmPass(!showConfirmPass);
 
   return (
-    <div className="text-blue-light flex col-span-12">
-      <div className="flex-1 flex flex-col gap-[25px]">
-        <h1 className="text-[40px] font-[700]">t=="registration"</h1>
-        {/* <h2>{t("reg_to_buy")}</h2> */}
-        <h2>t=="reg_to_buy"</h2>
-        <form className="max-w-[515px] mt-[25px] flex flex-col gap-[15px]">
-          <div className="flex flex-col gap-[15px]">
-            <label htmlFor="email-address">E-mail</label>
-            <input
-              className="inp-place text-blue-light h-[55px] border border-blue-light outline-none px-[25px] bg-green-bg focus:bg-green-light"
-              type="email"
-              label="Email address"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-              placeholder="Email address"
-            />
-          </div>
+    <div className="container">
+      <div className="gap-[25px] flex flex-col col-span-half">
+        <div className="flex flex-col gap-[5px]">
+          <h4 className="simple font-semibold">{t("registration")}</h4>
+          <p className="p1">{t("reg_to_buy")}</p>
+        </div>
+        <form className="max-w-[515px] flex flex-col gap-[15px]">
+          <label
+            className="text-p1 font-semibold text-blue-light"
+            htmlFor="email-address"
+          >
+            E-mail
+          </label>
+          <input
+            className="inp-place text-blue-light h-[55px] border border-blue-light outline-none px-[25px] bg-green-bg focus:bg-green-light"
+            type="email"
+            label="Email address"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+            placeholder="Email address"
+          />
           <div className="flex flex-col gap-[15px] relative">
             {/* <label htmlFor="password">{t("parola")}</label> */}
-            <label htmlFor="password">t=="parola"</label>
+            <label
+              className="text-p1 font-semibold text-blue-light"
+              htmlFor="password"
+            >
+              {t("parola")}
+            </label>
             <input
               className="inp-place text-blue-light h-[55px] border border-blue-light outline-none px-[25px] bg-green-bg focus:bg-green-light"
               type={!showPass ? "text" : "password"}
@@ -90,7 +108,12 @@ const RegBlock = () => {
           </div>
           <div className="flex flex-col gap-[15px] relative">
             {/* <label htmlFor="confirm-password">{t("confirm_parola")}</label> */}
-            <label htmlFor="confirm-password">t=="confirm_parola"</label>
+            <label
+              className="text-p1 font-semibold text-blue-light"
+              htmlFor="confirm-password"
+            >
+              {t("confirm_parola")}
+            </label>
             <input
               className="inp-place text-blue-light h-[55px] border border-blue-light outline-none pl-[25px] pr-[55px] bg-green-bg focus:bg-green-light"
               type={!showConfirmPass ? "text" : "password"}
@@ -111,8 +134,8 @@ const RegBlock = () => {
               setIsCurr={() => setAcceptPrivacy(!acceptPrivacy)}
             >
               Я принимаю{" "}
-              <Link href={"/privacy"}>
-                <u>Политику Приватности</u>
+              <Link href={`/${lang}/privacy`}>
+                <u>Политику конфиденциальности</u>
               </Link>
             </Checkbox>
           </div>
@@ -121,22 +144,32 @@ const RegBlock = () => {
             type="submit"
             onClick={onSubmit}
           >
-            t=="reg_butt"
-            {/* {t("reg_butt")} */}
+            {t("reg_butt")}
           </button>
         </form>
         <div className="flex flex-col gap-[15px]">
-          <p className="text-[18px] font-[600]">t=="reg_social"</p>
-          <div className="svgfooter">
-            <Image src="/assets/icons/facebook.svg" width={36} height={36} />
-            <Image src="/assets/icons/instagram.svg" width={36} height={36} />
-            <Image src="/assets/icons/vk.svg" width={36} height={36} />
-            <Image src="/assets/icons/telegram.svg" width={36} height={36} />
+          <p className="text-[18px] font-[600]">{t("reg_social")}</p>
+          <div className="flex gap-[25px]">
+            <a href="https://facebook.com">
+              <Facebook />
+            </a>
+            <a href="https://x.com">
+              <X />
+            </a>
+            <a href="https://instagram.com">
+              <Instagram />
+            </a>
+            <a href="https://t.me">
+              <Telegram />
+            </a>
+            <a href="https://vk.com">
+              <Vk />
+            </a>
           </div>
         </div>
       </div>
       <Image
-        className="w-full h-full flex-1"
+        className="col-span-half"
         src={reg}
         alt="coffee"
         width={747}

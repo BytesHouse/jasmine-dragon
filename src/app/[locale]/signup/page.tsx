@@ -4,9 +4,9 @@ import Footer from "@/components/Footer/Footer";
 
 const Registration = () => {
   return (
-    <div className="container">
-      <RegBlock />
-    </div>
+    // <div className="container">
+    <RegBlock />
+    // </div>
   );
 };
 

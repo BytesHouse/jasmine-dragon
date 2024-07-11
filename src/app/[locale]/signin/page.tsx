@@ -4,11 +4,9 @@ import LogBlock from "./components/LogBlock/LogBlock";
 
 const LoginPage = () => {
   return (
-    <div className="container">
-      <Header />
-      <LogBlock />
-      <Footer />
-    </div>
+    // <div className="container">
+    <LogBlock />
+    // </div>
   );
 };
 

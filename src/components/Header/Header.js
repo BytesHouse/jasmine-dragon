@@ -69,10 +69,12 @@ const Header = () => {
           </div>
         )}
       </div>
-      {(pathname !== "/ro") & (pathname !== "/ru") && (
+      {(pathname !== "/ro") & (pathname !== "/ru") ? (
         <Breadcrumbs
           breadcrumbs={pathname.split("/").slice(1, pathname.length)}
         />
+      ) : (
+        ""
       )}
     </header>
   );

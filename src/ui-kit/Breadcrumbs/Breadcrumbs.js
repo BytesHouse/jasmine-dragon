@@ -17,7 +17,7 @@ const Breadcrumbs = ({ breadcrumbs, ...props }) => {
               <>
                 <Link
                   href={path}
-                  key={item}
+                  key={index}
                   className={`p1 font-semibold ${
                     index == breadcrumbs.length - 1
                       ? "text-blue-light"
@@ -28,6 +28,7 @@ const Breadcrumbs = ({ breadcrumbs, ...props }) => {
                 </Link>
                 {index != breadcrumbs.length - 1 && (
                   <svg
+                    className="ml-[5px] text-blue-light transition"
                     width="24"
                     height="24"
                     viewBox="0 0 24 24"

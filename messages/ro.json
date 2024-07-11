@@ -1,7 +1,4 @@
 {
-  "confirm_parola": "Confirmă parola",
-  "hello": "Menu",
-  "parola": "Parola",
   "Privacy": {
     "privacy_text_0": "Politica de confidențialitate",
     "privacy_text_00": "Colectăm informațiile pe care ni le furnizați atunci când vă înregistrați pe site, plasați o comandă sau completați formulare de feedback. Aceste informații pot include numele, adresa de e-mail, numărul de telefon și adresa de expediere.",
@@ -22,10 +19,17 @@
     "privacy_title_6": "Modificări ale acestei politici",
     "privacy_title_7": "Contactaţi-ne"
   },
-  "reg_butt": "Inregistreaza-te",
-  "registration": "Registrarea",
-  "reg_social": "Înregistrare folosind rețelele sociale",
-  "reg_to_buy": "Înregistrează-te pentru a cumpăra ceai",
+  "SignInUp": {
+    "confirm_parola": "Confirmă parola",
+    "hello": "Menu",
+    "parola": "Parola",
+    "reg_butt": "Înregistrare",
+    "login_butt": "Autentificare",
+    "registration": "Registrarea",
+    "reg_social": "Înregistrare folosind rețelele sociale",
+    "signin_social": "Autentificare folosind rețelele sociale",
+    "reg_to_buy": "Înregistrează-te pentru a cumpăra ceai"
+  },
   "sign_in": "Intră pe site",
   "sign_to_buy": "Vizitați site-ul web pentru a cumpăra ceai",
   "Terms": {
@@ -53,6 +57,9 @@
     "terms": "Termeni de utilizare",
     "privacy": "Confidențialitate",
     "ondatra": "Ondatra",
-    "shopping_cart": "Coșul de cumpărături"
+    "shopping_cart": "Coșul de cumpărături",
+    "teas_menu": "Ceaiuri",
+    "signup": "Înregistrare",
+    "signin": "Întrare"
   }
 }

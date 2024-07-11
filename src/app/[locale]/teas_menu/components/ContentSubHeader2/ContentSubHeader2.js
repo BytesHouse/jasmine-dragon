@@ -9,7 +9,7 @@ const ContentSubHeader2 = () => {
     alert("Имя кнопки");
   };
   return (
-    <div className="grid-column">
+    <div className="col-span-full">
       <div className="navigation">
         <div className="textforheader flexcolumtext">
           <h3 id="h3" className="colorfortext">

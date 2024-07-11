@@ -307,12 +307,6 @@ html {
   flex-wrap: nowrap;
 }
 
-.svgfooter {
-  display: flex;
-  flex-direction: row;
-  gap: 25px;
-}
-
 .inputfooter {
   box-sizing: border-box;
   display: flex;
