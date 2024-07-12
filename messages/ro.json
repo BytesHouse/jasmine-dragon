@@ -28,10 +28,12 @@
     "registration": "Registrarea",
     "reg_social": "Înregistrare folosind rețelele sociale",
     "signin_social": "Autentificare folosind rețelele sociale",
-    "reg_to_buy": "Înregistrează-te pentru a cumpăra ceai"
+    "reg_to_buy": "Înregistrează-te pentru a cumpăra ceai",
+    "sign_in": "Intră pe site",
+    "sign_to_buy": "Vizitați site-ul web pentru a cumpăra ceai",
+    "reset": "Resetarea parolei",
+    "reset_text": "Introduceți noua parolă"
   },
-  "sign_in": "Intră pe site",
-  "sign_to_buy": "Vizitați site-ul web pentru a cumpăra ceai",
   "Terms": {
     "terms_text_0": "Termeni de utilizare",
     "terms_text_00": "Sunteți de acord să utilizați site-ul nostru numai în scopuri legale și să respectați toate legile și reglementările aplicabile.",
@@ -60,6 +62,8 @@
     "shopping_cart": "Coșul de cumpărături",
     "teas_menu": "Ceaiuri",
     "signup": "Înregistrare",
-    "signin": "Întrare"
+    "signin": "Întrare",
+    "password_reset": "Resetarea parolei",
+    "profile": "Profil"
   }
 }

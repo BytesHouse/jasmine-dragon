@@ -1,8 +1,8 @@
 "use client";
 
 import { useState } from "react";
-import Minus from "../../../public/assets/Icons/Minus";
-import Plus from "../../../public/assets/Icons/Plus";
+import Minus from "../../ui-kit/icons/MinusPlus/Minus";
+import Plus from "../../ui-kit/icons/MinusPlus/Plus";
 // import PlusIcon from "../../../public/assets/Images/Plus.svg";
 
 function Counter() {

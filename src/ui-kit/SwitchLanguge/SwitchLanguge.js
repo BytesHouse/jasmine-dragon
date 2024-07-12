@@ -2,10 +2,10 @@
 
 import { useState } from "react";
 import { usePathname } from "next/navigation";
-import { Arrowdown, Arrowup } from "../icons";
 import { locales } from "@/i18n";
 import Link from "next/link";
 import { useLocale } from "next-intl";
+import Strelka from "../icons/Strelka/Strelka";
 
 const SwitchLanguage = () => {
   const lang = useLocale();
@@ -28,36 +28,37 @@ const SwitchLanguage = () => {
     <div
       onClick={handleChangeIsShow}
       className={`${
-        !isShow ? "rounded-b-[20px]" : "rounded-b-[0px]"
-      } ml-[15px] w-[100px] flex rounded-[20px] px-[15px] py-[5px] self-end text-xl items-center border border-[var(--blue-light)] text-[var(--blue-light)] relative`}
+        !isShow ? "rounded-b-[16px]" : "rounded-b-[0px]"
+      } ml-[15px] w-[102px] flex rounded-[16px] px-[15px] py-[5px] self-end text-xl items-center border border-[var(--blue-light)] text-[var(--blue-light)] relative hover:cursor-pointer`}
     >
-      <div>
-        <div className="flex items-center gap-[15px]">
-          <h5 className="simple w-auto capitalize">{choice}</h5>
-          {isShow ? <Arrowdown /> : <Arrowup />}
-        </div>
-        {isShow && (
-          <ul className="absolute top-[100%] -left-[1px] w-[100px]">
-            {locales.map(
-              (item, index) =>
-                choice !== item && (
-                  <li
-                    className="hover:bg-blue cursor-pointer last:rounded-b-2xl  border-x border-b capitalize"
-                    onClick={() => handleChangeChoice(item)}
-                    key={index}
-                  >
-                    <Link
-                      className="w-full block py-[5px] px-[15px] text-h5"
-                      href={`/${item}${pathName}`}
-                    >
-                      {item}
-                    </Link>
-                  </li>
-                )
-            )}
-          </ul>
-        )}
+      <div className="flex items-center gap-[15px]">
+        <h5 className="simple w-auto capitalize">{choice}</h5>
+        <Strelka
+          className={`transition ${isShow && "rotate-90"}`}
+          isMini={true}
+        />
       </div>
+      {isShow && (
+        <ul className="absolute top-[100%] -left-[1px] w-[102px]">
+          {locales.map(
+            (item, index) =>
+              choice !== item && (
+                <li
+                  className="hover:bg-blue cursor-pointer last:rounded-b-2xl  border-x border-b capitalize"
+                  onClick={() => handleChangeChoice(item)}
+                  key={index}
+                >
+                  <Link
+                    className="w-full block py-[5px] px-[15px] text-h5"
+                    href={`/${item}${pathName}`}
+                  >
+                    {item}
+                  </Link>
+                </li>
+              )
+          )}
+        </ul>
+      )}
     </div>
   );
 };

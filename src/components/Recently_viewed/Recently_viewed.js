@@ -1,6 +1,6 @@
 import { mock2 } from "@/config/constants";
-import ChooseHeart from "../../../public/assets/icons/ChooseHeart";
-import Cart from "../../../public/assets/icons/Cart";
+import ChooseHeart from "../../ui-kit/icons/ChooseHeart/ChooseHeart";
+import Cart from "../../ui-kit/icons/Cart/Cart";
 import Pagination from "../Pagination/Pagination";
 
 const RecentlyViewed = () => {

@@ -5,22 +5,20 @@ import BurgerIcon from "./BurgerIcon/BurgerIcon";
 import HeartIcon2 from "./HeartIcon2/HeartIcon2";
 import Wagon from "./Wagon/Wagon";
 import Good from "./Good/Good";
-import Arrowdown from "./Arrowdown/Arrowdown";
-import Arrowup from "./Arrowup/Arrowup";
 import Plus from "./Plus/Plus";
-import Arrowright from "./Arrowright/Arrowright";
+import ArrowRight from "./ArrowRight/ArrowRight";
 import Closebutton from "./Closebutton/Closebutton";
+import Strelka from "./Strelka/Strelka";
 export {
-    HeartIcon,
-    Closebutton,
-    Arrowright,
-    Plus,
-    Arrowup,
-    Arrowdown,
-    ProfileIcon,
-    BagIcon,
-    BurgerIcon,
-    HeartIcon2,
-    Wagon,
-    Good
+  HeartIcon,
+  Closebutton,
+  ArrowRight,
+  Plus,
+  ProfileIcon,
+  BagIcon,
+  BurgerIcon,
+  HeartIcon2,
+  Wagon,
+  Good,
+  Strelka,
 };

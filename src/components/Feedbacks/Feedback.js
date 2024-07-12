@@ -3,7 +3,7 @@
 import Image from "next/image";
 import { useRef } from "react";
 import ArrowLeft from "../../../public/assets/icons/ArrowLeft/ArrowLeft";
-import ArrowRight from "../../ui-kit/icons/ArrowRight/ArrowRight";
+import ArrowRight from "../../../public/assets/icons/ArrowRight";
 
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";

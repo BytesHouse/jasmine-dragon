@@ -2,10 +2,10 @@
 // import Strelka from "../../assets/Images/Strelka.svg";
 import Link from "next/link";
 import { useState } from "react";
-import Cup from "../../../public/assets/Icons/Cup";
-import TeaLeaves from "../../../public/assets/Icons/TeaLeaves";
+import Cup from "../../ui-kit/icons/Cup/Cup";
+import TeaLeaves from "../../ui-kit/icons/TeaLeaves/TeaLeaves";
 import Image from "next/image";
-import Strelka from "../../../public/assets/Icons/Strelka";
+import Strelka from "../../ui-kit/icons/Strelka/Strelka";
 import SwitchLanguage from "../../ui-kit/SwitchLanguge/SwitchLanguge";
 import { useLocale } from "next-intl";
 

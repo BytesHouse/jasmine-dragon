@@ -2,51 +2,63 @@
 // import greentea from "..//..//..//..//assets/Images/greentea.png"
 const pen = "/assets/Images/Pen.svg";
 const greentea = "/assets/Images/greentea.png";
+import Edit from "@/ui-kit/icons/Edit/Edit";
+import ProfileDeco from "@/ui-kit/icons/ProfileDeco/ProfileDeco";
+import Image from "next/image";
 
 const UserProfile = () => {
   return (
-    <div className="flex col-span-12 mt-[50px] flex relative gap-[50px]">
-      <div className="flex flex-col gap-[25px] font-[var(--Nunito-sans)] text-[var(--blue-light)] mt-[50px]">
-        <h1 className="text-[40px] font-[700]">Профиль</h1>
+    <>
+      <div className="flex flex-col col-span-half gap-[25px] font-[var(--Nunito-sans)] text-[var(--blue-light)] mt-[50px]">
+        <h4 className="simple font-bold">Профиль</h4>
         <div className="flex flex-col gap-[15px]">
-          <label className="text-[20px] font-[500]">Адрес доставки</label>
-          <input
-            className="w-[700px] border border-blue-light bg-[var(--green-bg)] p-4 focus:outline-none"
-            type="text"
-          ></input>
-          <img
-            className="absolute mt-[3.7%] ml-[43%] w-[36px] h-[36px]"
-            src={pen}
-            alt="redact"
-          ></img>
+          <label className="text-h5 font-semibold text-blue-light">
+            Адрес доставки
+          </label>
+          <div className="max-w-[695px] flex gap-[15px] items-center p-[15px] border border-blue-light">
+            <ProfileDeco />
+            <input
+              className=" w-full bg-[var(--green-bg)] focus:outline-none"
+              type="text"
+            ></input>
+            <Edit />
+          </div>
         </div>
         <div className="flex flex-col gap-[15px]">
-          <label className="text-[20px] font-[500]">Имя Фамилия</label>
-          <input
-            className="w-[700px] border border-blue-light  bg-[var(--green-bg)] p-4 focus:outline-none"
-            type="text"
-          ></input>
-          <img
-            className="absolute mt-[3.7%] ml-[43%] w-[36px] h-[36px]"
-            src={pen}
-            alt="redact"
-          ></img>
+          <label className="text-h5 font-semibold text-blue-light">
+            Имя Фамилия
+          </label>
+          <div className="max-w-[695px] flex gap-[15px] items-center p-[15px] border border-blue-light">
+            <ProfileDeco />
+            <input
+              className=" w-full bg-[var(--green-bg)] focus:outline-none"
+              type="text"
+            ></input>
+            <Edit />
+          </div>
         </div>
         <div className="flex flex-col gap-[15px]">
-          <label className="text-[20px] font-[500]">Номер телефона</label>
-          <input
-            className="w-[700px] border border-blue-light  bg-[var(--green-bg)] p-4 focus:outline-none"
-            type="text"
-          ></input>
-          <img
-            className="absolute mt-[3.7%] ml-[43%] w-[36px] h-[36px]"
-            src={pen}
-            alt="redact"
-          ></img>
+          <label className="text-h5 font-semibold text-blue-light">
+            Номер телефона
+          </label>
+          <div className="max-w-[695px] flex gap-[15px] items-center p-[15px] border border-blue-light">
+            <ProfileDeco />
+            <input
+              className=" w-full bg-[var(--green-bg)] focus:outline-none"
+              type="number"
+            ></input>
+            <Edit />
+          </div>
         </div>
       </div>
-      <img className="w-full h-full flex-1" src={greentea} alt="tea"></img>
-    </div>
+      <Image
+        className="col-span-half justify-self-end"
+        src={greentea}
+        alt="tea"
+        height={563}
+        width={695}
+      />
+    </>
   );
 };
 

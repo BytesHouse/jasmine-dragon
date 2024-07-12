@@ -1,4 +1,3 @@
-import React from "react";
 import { mock } from "../../config/constants";
 import { HeartIcon2, Wagon } from "../../ui-kit/icons";
 import Image from "next/image";

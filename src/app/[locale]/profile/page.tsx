@@ -6,13 +6,13 @@ import { orders } from "@/config/constants";
 
 const Profiles = () => {
   return (
-    <div className="container">
-      <div className="col-span-full">
-        {/* <DirectionForProfile /> */}
-        <UserProfile />
-        <RecentlyOrders array={orders} />
-      </div>
-    </div>
+    <main className="container">
+      {/* <div className="col-span-full"> */}
+      {/* <DirectionForProfile /> */}
+      <UserProfile />
+      <RecentlyOrders array={orders} />
+      {/* </div> */}
+    </main>
   );
 };
 

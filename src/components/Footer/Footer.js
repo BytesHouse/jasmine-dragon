@@ -1,6 +1,6 @@
 import Footerblock1 from "@/components/Footerblock1/Footerblock1";
 import Footerbuttons from "@/components/Footerbuttons/Footerbuttons";
-import Footerbuttons2 from "@/components/Footerbuttons2/Footerbuttons2";
+import Footerbuttons2 from "@/components/Footerbuttons2 (dead)/Footerbuttons2";
 import Footerfinal from "@/components/Footerfinal/Footerfinal";
 
 const Footer = () => {

@@ -1,11 +1,7 @@
 // import logo from "../../../public/assets/Images/Logo.svg";
 
 import Image from "next/image";
-import Facebook from "../../../public/assets/Icons/Facebook";
-import X from "../../../public/assets/Icons/X";
-import Instagram from "../../../public/assets/Icons/Instagram";
-import Telegram from "../../../public/assets/Icons/Telegram";
-import Vk from "../../../public/assets/Icons/Vk";
+import SocialButtons from "@/ui-kit/SocialButtons/SocialButtons";
 
 const Footerblock1 = () => {
   return (
@@ -36,23 +32,7 @@ const Footerblock1 = () => {
           <button className="buttonfooter">Подписаться</button>
         </div>
       </div>
-      <div className="flex gap-[25px]">
-        <a href="https://facebook.com">
-          <Facebook />
-        </a>
-        <a href="https://x.com">
-          <X />
-        </a>
-        <a href="https://instagram.com">
-          <Instagram />
-        </a>
-        <a href="https://t.me">
-          <Telegram />
-        </a>
-        <a href="https://vk.com">
-          <Vk />
-        </a>
-      </div>
+      <SocialButtons />
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React from "react";
 import Agreements from "../Agreements/Agreements";
 import Image from "next/image";
-import EnterPromocode from "../../../public/assets/icons/EnterPromocode";
+import EnterPromocode from "../../ui-kit/icons/EnterPromocode/EnterPromocode";
 // import checkboxdone from "../../../public/assets/Images/Checkdone.svg";
 
 const CheckForOrders = () => {

@@ -1,7 +1,7 @@
 import { mock } from "@/config/constants";
 import Image from "next/image";
-import Cart from "../../../public/assets/icons/Cart";
-import ChooseHeart from "../../../public/assets/icons/ChooseHeart";
+import Cart from "../../ui-kit/icons/Cart/Cart";
+import ChooseHeart from "../../ui-kit/icons/ChooseHeart/ChooseHeart";
 import Pagination from "../Pagination/Pagination";
 
 const Choise = () => {

@@ -1,8 +1,8 @@
 import { mock } from "@/config/constants";
 // import cancelation from "..//..//assets/Images/Cancelation.svg";
 import Counter from "../Counter/Counter";
-import ChooseHeart2 from "../../../public/assets/icons/ChooseHeart2";
-import Cancelation from "../../../public/assets/icons/Cancelation";
+import ChooseHeart2 from "../../ui-kit/icons/ChooseHeart/ChooseHeart2";
+import Cancelation from "../../ui-kit/icons/Cancelation/Cancelation";
 import Image from "next/image";
 
 const ChoiseForCart = () => {
