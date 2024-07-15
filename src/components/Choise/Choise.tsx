@@ -1,10 +1,14 @@
+"use client";
 import { mock } from "@/config/constants";
 import Image from "next/image";
 import Cart from "../../ui-kit/icons/Cart/Cart";
 import ChooseHeart from "../../ui-kit/icons/ChooseHeart/ChooseHeart";
 import Pagination from "../Pagination/Pagination";
+import { useProduct } from "../Providers/ContextProvider";
 
 const Choise = () => {
+  const { productsList } = useProduct();
+  console.log(productsList);
   return (
     <div className="container !pt-0">
       {mock.map((item) => (

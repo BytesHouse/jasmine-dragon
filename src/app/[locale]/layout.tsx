@@ -5,6 +5,8 @@ import "./globals.css";
 import { Metadata } from "next";
 import { Header } from "@/components";
 import Footer from "@/components/Footer/Footer";
+import { ProductProvider } from "@/components/Providers/ContextProvider";
+import { prisma } from "../../../db";
 
 export const metadata: Metadata = {
   title: {
@@ -25,15 +27,17 @@ export default async function LocaleLayout({
   // Providing all messages to the client
   // side is the easiest way to get started
   const messages = await getMessages();
-
+  const teas = await prisma.product.findMany();
   return (
     <html lang={locale}>
       <body>
-        <NextIntlClientProvider messages={messages}>
-          <Header />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <ProductProvider products={teas}>
+          <NextIntlClientProvider messages={messages}>
+            <Header />
+            {children}
+            <Footer />
+          </NextIntlClientProvider>
+        </ProductProvider>
       </body>
     </html>
   );

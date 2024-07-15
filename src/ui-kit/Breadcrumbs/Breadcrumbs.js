@@ -14,36 +14,37 @@ const Breadcrumbs = ({ breadcrumbs, ...props }) => {
           breadcrumbs.map(function (item, index) {
             path += `/${item}`;
             return (
-              <>
+              index != breadcrumbs.length - 1 ? <>
                 <Link
                   href={path}
                   key={index}
-                  className={`p1 font-semibold ${
-                    index == breadcrumbs.length - 1
-                      ? "text-blue-light"
-                      : "text-blue"
-                  } hover:text-blue-light transition`}
+                  className={`p1 font-semibold ${index == breadcrumbs.length - 1
+                    ? "text-blue-light"
+                    : "text-blue"
+                    } hover:text-blue-light transition`}
                 >
                   {t(item)}
                 </Link>
-                {index != breadcrumbs.length - 1 && (
-                  <svg
-                    className="ml-[5px] text-blue-light transition"
-                    width="24"
-                    height="24"
-                    viewBox="0 0 24 24"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M9 4.50024L16.5 12.0002L9 19.5002"
-                      stroke="#5E9599"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                )}
+                <svg
+                  className="ml-[5px] text-blue-light transition"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M9 4.50024L16.5 12.0002L9 19.5002"
+                    stroke="#5E9599"
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                  />
+                </svg>
               </>
+                :
+                <p>
+                  {breadcrumbs[breadcrumbs.length - 2] === "order" ? t(item) : `# ${item}`}
+                </p>
             );
           })}
       </div>

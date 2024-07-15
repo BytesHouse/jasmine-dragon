@@ -1,12 +1,12 @@
 "use client";
 
 import { useState } from "react";
-import Choise from "../Choise/Choise";
 import Choise2 from "../Choise2/Choise2";
 import Sort from "../Sort/Sort";
 import ChocoMenu from "@/ui-kit/icons/ChocoMenu/ChocoMenu";
 import LineMenu from "@/ui-kit/icons/LineMenu/LineMenu";
 import CloseMini from "../../ui-kit/icons/CloseMini/CloseMini";
+import Choise from '@/components/Choise/Choise'
 
 const Filters = () => {
   const [isHorizontal, setIsHorizontal] = useState(true); // Состояние для отслеживания текущего вида товаров

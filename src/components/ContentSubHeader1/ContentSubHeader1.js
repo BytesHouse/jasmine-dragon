@@ -66,7 +66,7 @@ const ContentSubHeader1 = () => {
               alt="coffee-table"
               width={295}
               height={295}
-              className="col-span-3"
+              className="col-span-3 h-auto"
             />
             <div className="flex flex-col gap-[10px] col-span-5">
               <h5 className="text-[27px]">
